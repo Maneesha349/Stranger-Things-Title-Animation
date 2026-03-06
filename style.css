@@ -1,0 +1,143 @@
+ *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            scrollbar-width: none;
+        }
+        .container{
+            height: 105vh;
+        }
+        .upside{
+            height: 55vh;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background-image:linear-gradient(rgb(188, 251, 255),rgb(254, 254, 164)) ;  
+        }
+        @keyframes cycling {
+            to{transform: translateX(-1200px);} 
+        }
+         @keyframes flying {
+            to{transform: translateX(400px);} 
+        }
+        .down{
+            height: 50vh;
+            width: 100%;
+            position: relative;
+            background-image: linear-gradient(rgb(120, 53, 53),rgb(37, 9, 9));
+        }
+        img[alt="mike"]{
+            height: 200px;
+            width: 300px;
+             position: absolute;
+             right: 0px;
+             bottom: 0px;
+             animation: cycling 25s linear ;
+        }
+      
+        img[alt="bats"]{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 0px;
+            left: 400px;
+            animation: flying 25s linear ;
+        }
+        img[alt="black-tree"]{
+            height: 200px;
+            width: 100px;
+            position: absolute;
+            top: 30px;
+            left: 400px;
+        }
+        img[alt="black-tree2"]{
+            height: 200px;
+            width: 100px;
+             position: absolute;
+              top: 40px;
+            left: 500px;
+        }
+          img[alt="black-tree3"]{
+            height: 200px;
+            width: 100px;
+             position: absolute;
+             top: 20px;
+            left: 600px;
+        }
+          img[alt="black-tree4"]{
+          height: 200px;
+            width: 100px;
+             position: absolute;
+             top: 20px;
+            right: 600px;
+        }
+          img[alt="black-tree5"]{
+            height: 250px;
+            width: 100px;
+             position: absolute;
+             top: 20px;
+            right: 500px;
+        }
+        img[alt="long-trees"]{
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            filter: blur(1px);
+        }
+        img[alt="black-tree1"]{
+             height: 350px;
+            width: 400px;
+             position: absolute;
+             transform: rotateX(180deg) rotateY(180deg);
+        }
+        img[alt="will"]{
+            height: 150px;
+            width: 100px;
+            position: absolute;
+            transform: scaleY(-1);
+            left: 600px;
+            animation: will-move 25s ease-out;
+        }
+        @keyframes will-move {
+            from{transform: scaleY(-1);}
+            to{transform: translate(800px) scaleY(-1);}
+        }
+       img[alt="Stranger"]{
+        height: 150px;
+        width: 800px;
+        position: absolute;
+        bottom: 0;
+        left: 370px;
+        animation: stranger-move 25s ease-in-out;
+       }
+       @keyframes stranger-move {
+        from{transform: translateX(-500px);}
+        to{transform: translateX(40px); filter: drop-shadow(52px 40px 9px rgb(0, 0, 0));}
+       }
+       img[alt="Things"]{
+         height: 150px;
+        width: 800px;
+        position: absolute;
+        top: 0;
+        left: 370px;
+        animation: things-move 25s ease-in-out;
+       }
+       @keyframes things-move {
+         from{transform: translateX(500px);}
+        to{transform: translateX(40px);filter: drop-shadow(52px 40px 9px rgb(0, 0, 0));}
+       }
+       img[alt="upside"]{
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        left: 600px;
+       }
+       img[alt="down"]{
+         height: 100px;
+        position: absolute;
+        bottom: 0px;
+        left: 650px;
+        transform: scaleX(-1);
+       }

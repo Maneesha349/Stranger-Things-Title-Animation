@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upside">
+            <div class="trees">
+                <audio id="bg-music"  src="./title theme.mp3"></audio>
+
+               <img src="./fontbolt.png" alt="Stranger">
+               <img src="./upside.png" alt="upside">
+                <img src="./mike.png" alt="mike">
+                <img src="./bats.png" alt="bats">
+                <img src="./long-trees.png" alt="long-trees">
+                <img src="./black tree.png" alt="black-tree">
+                <img src="./black-tree2.png" alt="black-tree2">
+                <img src="./black-tree2.png" alt="black-tree3">
+                <img src="./black-tree2.png" alt="black-tree4">
+                <img src="./black-tree2.png" alt="black-tree5">
+            </div>
+
+        </div>
+        <div class="down">
+             <img src="./tree.png" alt="black-tree1">
+             <img src="./boy on cycle.png" alt="will">
+             <img src="./thingstitle.png" alt="Things">
+             <img src="./down2.png" alt="down" class="down-png">
+        </div>
+    </div>
+     <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const music = document.getElementById("bg-music");
+      music.play().catch(() => {
+        document.addEventListener("click", () => {
+          music.play();
+        }, { once: true });
+      });
+    });
+  </script>
+
+
+    
+</body>
+</html>
